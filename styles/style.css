@@ -38,4 +38,193 @@ ol {
   color: rebeccapurple;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
+/* Основной контейнер*/
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 133px;
+  
+}
+
+/*Поле - Санкт Петербург, например */
+input {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border-bottom: 1px solid white;
+}
+/*Убираем рамки и оставляем нижнее подчеркивание (бордер не убирается...)*/
+input:active {
+  border: none;
+  border-bottom: 1px solid white;
+}
+/* задаем поле для ввода ширину родителя*/
+.search-form__textfield {
+  width: 100%;
+}
+
+/*Указатель "руки" для кнопки - найти*/
+.button:hover {
+  cursor: pointer;
+  
+}
+
+/*задает размеры для видео*/
+.result__video-container {
+  padding-top: 78px;
+}
+
+.result__video {
+  width: 711px;
+
+  
+}
+
+.search-form {
+  display: flex;
+  gap: 35px;
+}
+/* Стили для кнопки*/
+.button {
+  width: 194px;
+  height: 34px;
+  border: 1px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  
+}
+/*стили для - По- смотри в окно*/
+
+.content__details {
+  min-width: 399px;
+  min-height: 20px;
+}
+
+.content__accent {
+  font-family: 'Oswald',Arial, Helvetica, sans-serif;
+  font-size: 75px;
+  text-align: left;
+  color: #545050;
+  text-transform: uppercase;
+}
+/*общие стили текста*/
+.title {
+  font-family: 'Oswald',Arial, Helvetica, sans-serif;
+  font-size: 75px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+/* списки */
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  Width: 225px;
+}
+
+.search-form__fieldset {
+  border: none;
+
+}
+
+.search-form__fieldset-title {
+  position: relative;
+}
+
+.search-form__fieldset-title::after {
+  content: '';
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Вы можете настроить высоту подчеркивания по вашему желанию */
+  background-color: #ffffff; /* Цвет подчеркивания */
+}
+
+.time {
+  text-decoration: none;
+}
+
+
+/* ДОПОЛНИТЬ СТИЛИ 1-ГО БЛОКО/*
+.
+
+/* СТИЛИ 2-ГО БЛОКА*/
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  width: 394px;
+  height: 107px;
+}
+
+.content__video-card-description-container {
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card {
+  text-decoration: none;
+}
+
+.content__video-card-title  {
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+
+
+
+.content__list {
+  max-height: 325px; /* Максимальная высота контейнера */
+  overflow-y: auto; /* Включить вертикальную прокрутку при необходимости */
+  padding: 10px; /* Отступ внутри контейнера */
+
+}
+
+ul {
+  list-style: none; /* Убирает маркеры списка */
+  padding: 0; /* Убирает внутренний отступ списка */
+  margin: 0; /* Убирает внешний отступ списка */
+}
+
+li {
+  margin-bottom: 8px; /* Отступ между элементами списка */
+}
