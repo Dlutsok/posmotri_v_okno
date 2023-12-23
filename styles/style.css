@@ -60,7 +60,9 @@ ol {
 .content {
   display: flex;
   gap: 32px;
-  padding-top: 133px;
+  align-items: center;
+  justify-content: center;
+  /*padding-top: 133px;*/
 }
 
 .result__video-container {
