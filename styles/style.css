@@ -16,6 +16,10 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 h1,
@@ -60,19 +64,17 @@ ol {
 .content {
   display: flex;
   gap: 32px;
-  align-items: center;
-  justify-content: center;
   /*padding-top: 133px;*/
 }
 
 .result__video-container {
+  
 }
 
 .result__video {
   width: 711px;
   height: 386px;
   object-fit: cover;
-  margin-top: 78px;
 }
 
 .search-form {
@@ -206,6 +208,11 @@ input {
 .content__list-item {
   padding-bottom: 30px;
 }
+
+.content__list-item:last-child {
+  padding-bottom: 0;
+}
+
 
 .content__list {
   max-height: 295px;
