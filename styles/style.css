@@ -45,6 +45,7 @@ ol {
 .result__video-container,
 .content__list {
   position: relative;
+  
 }
 
 .preloader {
@@ -64,10 +65,7 @@ ol {
 .content {
   display: flex;
   gap: 32px;
-  /*padding-top: 133px;*/
-}
-
-.result__video-container {
+  align-items: flex-end;
   
 }
 
@@ -192,6 +190,12 @@ input {
   height: 103px;
 }
 
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  margin-left: 10px;
+}
+
 .title {
   font-family: Oswald;
   font-size: 75px;
@@ -241,11 +245,7 @@ input {
   color: #ffffff;
 }
 
-.content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
-  margin-left: 10px;
-}
+
 
 .more-button {
   width: 100%;
