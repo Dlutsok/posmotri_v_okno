@@ -46,10 +46,6 @@ ol {
   position: relative;
 }
 
-.preloader {
-  position: absolute;
-}
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
