@@ -17,9 +17,8 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
+  align-items: center;
   justify-content: center;
-  max-width: 1140px;
-  max-height: 534px;
 }
 
 h1,
@@ -60,9 +59,9 @@ ol {
 .content {
   display: flex;
   gap: 32px;
-
+  align-self: center;
+  align-items: flex-start;
 }
-
 .result {
   align-self: flex-end;
 }
@@ -285,8 +284,8 @@ input {
 }
 
 .content__list {
-  max-height: 295px;
   overflow-y: auto;
+  block-size: 298px;
 }
 
 .content__video-card {
