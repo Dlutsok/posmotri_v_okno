@@ -14,7 +14,6 @@ html {
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
   background-color: #1b1919;
   display: flex;
   align-items: center;
@@ -41,6 +40,10 @@ ol {
   color: rebeccapurple;
 }
 
+video {
+  width: 100%;
+}
+
 .result__video-container,
 .content__list {
   position: relative;
@@ -58,7 +61,7 @@ ol {
 
 .content {
   display: flex;
-  gap: 32px;
+  gap: 30px;
   align-self: center;
   align-items: flex-start;
 }
@@ -76,7 +79,7 @@ ol {
 .search-form {
   display: flex;
   gap: 39px;
-  padding-top: 11px;
+  padding-top: 18px;
 }
 
 .search-form__label {
@@ -91,6 +94,11 @@ ol {
   outline-offset: 1px;
 }
 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .search-form__label:last-child .search-form__label-text {
   margin-right: 0;
   padding-left: 1px;
@@ -103,11 +111,6 @@ ol {
 
 .search-form__label-text {
   margin-right: 5px;
-}
-
-.search-form__label-text:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .search-form__fieldset {
@@ -161,12 +164,12 @@ input {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255. 0.70);
 }
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 11px;
 }
 
 .search-form__pseudo-checkbox {
@@ -198,6 +201,7 @@ input {
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .button:active {
@@ -283,20 +287,13 @@ input {
 .content__list {
   overflow-y: auto;
   block-size: 298px;
+  min-width: 418px;
+  overflow-y: scroll;
 }
 
 .content__list-item {
   padding-bottom: 26px;
   display: flex;
-}
-
-.content__list-item:focus {
-  outline: none;
-}
-
-.content__list-item:focus-visible {
-  border: 1px solid #fff;
-  outline: none;
 }
 
 .content__list-item:last-child {
